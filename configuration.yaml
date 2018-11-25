@@ -1,0 +1,92 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: -37.8333
+  longitude: 145.0333
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 35
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Australia/Melbourne
+  customize: !include customize.yaml
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: nookie1188
+  # Uncomment this if you are using SSL or running in Docker etc
+  base_url: mnd-ha.duckdns.org:8123
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+recorder:
+  purge_days: 5
+
+# Track the sun
+sun:
+
+# Text to speech
+tts:
+  platform: google
+  cache: true
+  cache_dir: /tmp/tts
+  time_memory: 300
+
+#XIAOMI
+xiaomi:
+ gateways:
+   - mac:
+     key: dn1mcw4az1vb3z7e
+  
+# Wemo
+wemo:
+  static:
+    - 192.168.1.4
+    
+# JAMES NOTIFY   
+notify:
+  - platform: joaoapps_join
+    device_id: 309f84b905ab415581d11f7c5b793514
+    name: James6P                                     
+    api_key: a47440872eca4ba08e95295560df3113
+  
+  - platform: pushbullet
+    name: Guy
+    api_key: o.W8J7IojFUnlT2LFMJJCTdItaATvXJ8p9
+
+joaoapps_join:
+  - name: James6P
+    device_id: 309f84b905ab415581d11f7c5b793514
+    api_key: a47440872eca4ba08e95295560df3113
+
+sensor: !include_dir_merge_list sensors
+#scene: !include scenes.yaml       
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+switch: !include_dir_merge_list switches
+#input_boolean: !include input_boolean.yaml
+#shell_command: !include shell_command.yaml

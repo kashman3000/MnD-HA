@@ -1,0 +1,19 @@
+#################################
+###       SENSORS             ###
+#################################
+  - platform: yr
+   
+  - platform: bom
+    zone_id: IDV60901
+    wmo_id: 95867
+    monitored_conditions:
+      - name
+      - aifstime_utc
+      - apparent_t
+      - gust_kmh
+      - air_temp
+      - dewpt
+      - press
+      - rain_trace
+      - wind_dir
+      - wind_spd_kmh
