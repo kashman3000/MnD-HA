@@ -1,0 +1,51 @@
+{
+    "data": {
+        "credentials": [
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "homeassistant",
+                "data": {
+                    "username": "jameskj"
+                },
+                "id": "2ded294c4526421e8a1c249b5159adb0",
+                "user_id": "a57be4612b1e4a8da9da24a2a17287b5"
+            }
+        ],
+        "groups": [
+            {
+                "id": "0d2c727ca1634cecae45ec994b505a98",
+                "name": "All Access"
+            }
+        ],
+        "refresh_tokens": [
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://192.168.87.250:8123/",
+                "client_name": null,
+                "created_at": "2018-11-24T21:39:59.850219+00:00",
+                "id": "c400336642be4a538cf9cf38a8091e62",
+                "jwt_key": "3b93c88c07ca5d9572f28d78770593a1f6bda28c968f2170102e84fa4e2ed33b6ffa152acb3f9c866664d8e6527e0617948bd7b33e3679ec22181ca7a595fe80",
+                "last_used_at": "2018-11-24T23:45:02.271008+00:00",
+                "last_used_ip": "192.168.87.31",
+                "token": "759de4df6d7e07c862983efca88902e578917440e67a41388f51a84d59ea57a3ef89de813fbf581b6e121e403f3766b81bce7421ce472ccb106e873d94fae355",
+                "token_type": "normal",
+                "user_id": "a57be4612b1e4a8da9da24a2a17287b5"
+            }
+        ],
+        "users": [
+            {
+                "group_ids": [
+                    "0d2c727ca1634cecae45ec994b505a98"
+                ],
+                "id": "a57be4612b1e4a8da9da24a2a17287b5",
+                "is_active": true,
+                "is_owner": true,
+                "name": "JamesKJ",
+                "system_generated": false
+            }
+        ]
+    },
+    "key": "auth",
+    "version": 1
+}

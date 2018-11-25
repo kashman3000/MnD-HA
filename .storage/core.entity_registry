@@ -1,0 +1,539 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.temperature_158d000159c982",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "temperature158d000159c982"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.temperature_158d00015738ac",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "temperature158d00015738ac"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.humidity_158d000159c982",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "humidity158d000159c982"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.humidity_158d00015738ac",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "humidity158d00015738ac"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.temperature_158d000149c1e6",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "temperature158d000149c1e6"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.illumination_f0b429b444ce",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "illuminationf0b429b444ce"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.humidity_158d000149c1e6",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "humidity158d000149c1e6"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.humidity_158d0001531a78",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "humidity158d0001531a78"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.temperature_158d000159c9e8",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "temperature158d000159c9e8"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.temperature_158d0001531a78",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "temperature158d0001531a78"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.humidity_158d000159c9e8",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "humidity158d000159c9e8"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d00011027b1",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00011027b1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.door_window_sensor_158d00015a952b",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00015a952b"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.door_window_sensor_158d00015a95a1",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00015a95a1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d00012304ef",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00012304ef"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.switch_158d00013ecbc9",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00013ecbc9"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d00013f8ab9",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00013f8ab9"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.door_window_sensor_158d0001193a00",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001193a00"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.water_leak_sensor_158d0001d72b3a",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001d72b3a"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.switch_158d0001288a6b",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001288a6b"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d00010f837c",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00010f837c"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d000113e096",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d000113e096"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.smoke_sensor_158d0001a8069f",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "alarm158d0001a8069f"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.door_window_sensor_158d00012afb39",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00012afb39"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.switch_158d0001870795",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001870795"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d00012a4356",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00012a4356"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d00023eed1c",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00023eed1c"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d00012a43c0",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00012a43c0"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d00023eecfa",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00023eecfa"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d00012f1f84",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00012f1f84"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d00012f1f6c",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00012f1f6c"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d0001291c87",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001291c87"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d00012919be",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00012919be"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d0001de9b93",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001de9b93"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d00012f2ece",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00012f2ece"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d0001db1643",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001db1643"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.gateway_light_f0b429b444ce",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "rgbf0b429b444ce"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.roku_yl006v812385",
+                "name": null,
+                "platform": "roku",
+                "unique_id": "YL006V812385"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.temperature_158d0001576214",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "temperature158d0001576214"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.humidity_158d0001576214",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "humidity158d0001576214"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.temperature_158d0001573b3d",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "temperature158d0001573b3d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.temperature_158d0001573b5d",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "temperature158d0001573b5d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.humidity_158d0001573b3d",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "humidity158d0001573b3d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.humidity_158d0001573b5d",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "humidity158d0001573b5d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.illumination_f0b429cfa976",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "illuminationf0b429cfa976"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.door_window_sensor_158d000153786f",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d000153786f"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.switch_158d00012967ff",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00012967ff"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d00012325fa",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00012325fa"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d00015a9066",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00015a9066"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.door_window_sensor_158d00015c85ca",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00015c85ca"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.door_window_sensor_158d000158363b",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d000158363b"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.wall_switch_left_158d00014a599c",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "channel_0158d00014a599c"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.wall_switch_right_158d00014a599c",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "channel_1158d00014a599c"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d00016ff28f",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00016ff28f"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d0001dc66ea",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001dc66ea"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d00012a260d",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00012a260d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d000128a22f",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d000128a22f"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.gateway_light_f0b429cfa976",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "rgbf0b429cfa976"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.hawthorn_kitchen_",
+                "name": null,
+                "platform": "wemo",
+                "unique_id": "221327K13002D5"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}
