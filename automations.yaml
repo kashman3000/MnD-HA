@@ -27,16 +27,16 @@
         entity_id: script.notify_guy
         data:
           variables:
-            title: 'Welcome to MM Guy'
+            title: 'Welcome Home Guy'
             message: >
                     Away mode is deactivated.
                     {{ "\n" }}
-                    The current temperature in the family room is {{states('sensor.temperature_158d000201831b')}} degrees with {{states('sensor.humidity_158d000201831b')}} humidty.{{ "\n" }}
+                    The current temperature in the family room is {{states('sensor.temperature_158d0001573b5d')}} degrees with {{states('sensor.humidity_158d0001573b5d')}} humidty.{{ "\n" }}
       - service: script.turn_on
         entity_id: script.notify_james
         data:
           variables:
-            title: 'Welcome to MM Guy'
+            title: 'Welcome Home Guy'
             message: 'Guy Arrived'
                     
   - alias: Cathy Arrive Home
@@ -51,16 +51,16 @@
         entity_id: script.notify_cathy
         data:
           variables:
-            title: 'Welcome to MM Cathy'
+            title: 'Welcome Home Cathy'
             message: >
                     Away mode is deactivated.
                     {{ "\n" }}
-                    The current temperature in the family room is {{states('sensor.temperature_158d000201831b')}} degrees with {{states('sensor.humidity_158d000201831b')}} humidty.{{ "\n" }}
+                    The current temperature in the family room is {{states('sensor.temperature_158d0001573b5d')}} degrees with {{states('sensor.humidity_158d0001573b5d')}} humidty.{{ "\n" }}
       - service: script.turn_on
         entity_id: script.notify_james
         data:
           variables:
-            title: 'Welcome to MM Cathy'
+            title: 'Welcome Home Cathy'
             message: 'Cathy Arrived'
 
 
@@ -75,7 +75,7 @@
 #################################
 ###      GENERAL ALERTS       ###
 #################################
-  - alias: MM Door Bell
+  - alias: Urquhart Door Bell
     trigger:
       platform: event
       event_type: click
@@ -87,7 +87,7 @@
         entity_id: script.notify_all
         data:
           variables:
-            title: 'MM Door Bell'
+            title: 'Home Door Bell'
             message: 'Someone is at the door!'
 
 #################################
@@ -128,7 +128,7 @@
         entity_id: script.notify_james
         data:
           variables:
-            title: 'MM Night Mode On'
+            title: 'Urquhart Night Mode On'
             message: 'Testing the trigger'
         
   - alias: Turn Night Mode Off
@@ -143,7 +143,7 @@
         entity_id: script.notify_james
         data:
           variables:
-            title: 'MM Night Mode Off'
+            title: 'Urquhart Night Mode Off'
             message: 'Testing the trigger'
             
 #################################
@@ -160,7 +160,7 @@
         entity_id: script.notify_james
         data:
           variables:
-            title: 'MM Sleep Mode On'
+            title: 'Urquhart Sleep Mode On'
             message: 'Testing the trigger'
         
   - alias: Turn Sleep Mode Off
@@ -175,7 +175,7 @@
         entity_id: script.notify_james
         data:
           variables:
-            title: 'MM Sleep Mode Off'
+            title: 'Urquhart Sleep Mode Off'
             message: 'Testing the trigger'
             
 #################################
