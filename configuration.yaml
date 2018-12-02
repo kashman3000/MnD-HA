@@ -58,8 +58,8 @@ tts:
 #XIAOMI
 xiaomi_aqara:
  gateways:
-   - mac: !secret xiamo_mac
-     key: !secret xiamo_key
+   - mac: !secret xiaomi_mac
+     key: !secret xiaomi_key
   
 # Wemo
 wemo:
