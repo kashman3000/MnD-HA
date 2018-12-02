@@ -7,4 +7,5 @@
           entity_id: script.sleep_mode_on
         turn_off:
           service: homeassistant.turn_on
+>>>>>>> ec020890ef53d76ddc381a28c8f1fe944c4ae331
           entity_id: script.sleep_mode_off
