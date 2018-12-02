@@ -17,3 +17,44 @@
       - rain_trace
       - wind_dir
       - wind_spd_kmh
+
+
+#################################
+###         FAMILY ARRIVE     ###
+#################################
+  - platform: template
+    sensors:
+      house_occupied:
+        friendly_name: "House Status"
+        value_template: >-
+            {%- if is_state("input_boolean.guy_wifi", "on") %}
+                occupied
+            {%- elif is_state("input_boolean.cathy_wifi", "on") %}
+                occupied
+            {%- elif is_state("input_boolean.james_wifi", "on") %}
+                occupied
+            {%- elif is_state("input_boolean.sam_wifi", "on") %}
+                occupied
+            {%- elif is_state("input_boolean.adam_wifi", "on") %}
+                occupied
+            {%- elif is_state("input_boolean.sarah_wifi", "on") %}
+                occupied           
+            {% else %}
+                unoccupied
+            {%- endif %}
+        icon_template: >-
+            {%- if is_state("input_boolean.guy_wifi", "on") %}
+                mdi:home-account
+            {%- elif is_state("input_boolean.cathy_wifi", "on") %}
+                mdi:home-account
+            {%- elif is_state("input_boolean.james_wifi", "on") %}
+                mdi:home-account
+            {%- elif is_state("input_boolean.sam_wifi", "on") %}
+                mdi:home-account
+            {%- elif is_state("input_boolean.adam_wifi", "on") %}
+                mdi:home-account
+            {%- elif is_state("input_boolean.sarah_wifi", "on") %}
+                mdi:home-account           
+            {% else %}
+                mdi:outline
+            {%- endif %} 

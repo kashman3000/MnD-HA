@@ -1,0 +1,64 @@
+#################################
+###          SETTINGS         ###
+#################################
+
+  mode_night:
+    name: Night Mode
+    icon: mdi:weather-night
+    
+  mode_away:
+    name: Away Mode
+    icon: mdi:alarm-light
+    
+  mode_sleep:
+    name: Sleep Mode
+    icon: mdi:sleep
+    
+  notifications:
+    name: Notification status
+    initial: on
+    icon: mdi:bell-ring
+    
+  morning_first:
+    name: Morning Greeting
+    icon: mdi:bell-ring
+    
+  welcome_home:
+    name: Welcome Greeting
+    icon: mdi:bell-ring
+    
+#################################
+###          FAMILY           ###
+#################################
+   
+  james_wifi:
+    name: James WiFi
+    icon: mdi:access-point
+    
+  sam_wifi:
+    name: Sam WiFi
+    icon: mdi:access-point
+    
+  guy_wifi:
+    name: Guy WiFi
+    icon: mdi:access-point
+
+  guy_tab_wifi:
+    name: Guy Tablet WiFi
+    icon: mdi:access-point
+    
+  cathy_wifi:
+    name: Cathy WiFi
+    icon: mdi:access-point
+    
+  cathy_tab_wifi:
+    name: Cathy Tablet WiFi
+    icon: mdi:access-point
+    
+  sarah_wifi:
+    name: Sarah WiFi
+    icon: mdi:access-point
+    
+  adam_wifi:
+    name: Adam WiFi
+    icon: mdi:access-point

@@ -40,9 +40,23 @@
                 "created_at": "2018-12-02T04:15:08.407659+00:00",
                 "id": "8127ed55a5e74812aef84c6d412a2e1b",
                 "jwt_key": "af3aad4614355436e611db905e5df269db27f86e7e47a1dc1772d4ac1531f96b685ee440ea29c8cd21d6cdfae8148e027121e163eed08a3316a6538c4029d45d",
-                "last_used_at": "2018-12-02T06:28:06.712149+00:00",
+                "last_used_at": "2018-12-02T22:43:00.739126+00:00",
                 "last_used_ip": "59.102.33.254",
                 "token": "8b11bd5fcf65439fa01e661add0fd7eb509a4e06974b684212461f0c7878276f5016b6f6c9a2d3e8137a6039cb4461344838461888ae33fb694da9f962fd6053",
+                "token_type": "normal",
+                "user_id": "a57be4612b1e4a8da9da24a2a17287b5"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://mnd-ha.duckdns.org:8123/",
+                "client_name": null,
+                "created_at": "2018-12-02T11:17:40.660274+00:00",
+                "id": "8a674df2520b4cbb9d352a63ef35e9c0",
+                "jwt_key": "2ddef034d89b484abb100890834afced71969bcc3c5be7f10a8a812722d38ab8ff512b7f0f00139adb871801d8c0d1fb1964ea5b86c7c27c094c9445f9f2f811",
+                "last_used_at": "2018-12-02T11:17:40.660441+00:00",
+                "last_used_ip": "59.102.33.254",
+                "token": "ebc6da6b741a50265897cc9e3d31605848d9bf0c0b2e15b554e407416490ae298bb95f1bc4b99842922c3bb1848cc9010b568d800e422d8fdcd134f2a61fa0a0",
                 "token_type": "normal",
                 "user_id": "a57be4612b1e4a8da9da24a2a17287b5"
             }

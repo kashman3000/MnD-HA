@@ -66,8 +66,17 @@ wemo:
   static:
     - 192.168.1.4
     
-# JAMES NOTIFY   
-
+# NOTIFY   
+notify:
+  - name: guypb
+    platform: pushbullet
+    api_key: !secret guy_push_key
+  - name: cathypb
+    platform: pushbullet
+    api_key: !secret cathy_push_key
+  - name: jamespb
+    platform: pushbullet
+    api_key: !secret james_push_key
 
 sensor: !include_dir_merge_list sensors
 #scene: !include scenes.yaml       
@@ -75,5 +84,5 @@ group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 switch: !include_dir_merge_list switches
-#input_boolean: !include input_boolean.yaml
+input_boolean: !include input_boolean.yaml
 #shell_command: !include shell_command.yaml
