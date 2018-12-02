@@ -129,6 +129,7 @@
       - group.ha
       - group.household_power
       - group.settings
+      - group.people
       - group.pi
    
   ha:
@@ -154,6 +155,18 @@
       - input_boolean.mode_away
       - input_boolean.welcome_home
       - input_boolean.morning_first
+      
+  People:
+    view: no      
+    entities:
+      - input_boolean.cathy_wifi
+      - input_boolean.cathy_tab_wifi
+      - input_boolean.guy_wifi
+      - input_boolean.guy_tab_wifi
+      - input_boolean.james_wifi
+      - input_boolean.sam_wifi
+      - input_boolean.adam_wifi
+      - input_boolean.sarah_wifi
 
 
   PI:
