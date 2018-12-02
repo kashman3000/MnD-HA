@@ -10,7 +10,6 @@
       - group.local_health
       - group.house
       - group.house_temps
-      - group.house_humidity
       - group.house_switches
       
   day:
@@ -21,6 +20,7 @@
       - sensor.bom_air_temp_c
       - sensor.bom_feels_like_c
       - sensor.bom_rain_today
+      - sensor.house_occupied
       
   local_health:
     view: no
@@ -39,14 +39,11 @@
       - sensor.temperature_158d0001576214
       - sensor.temperature_158d0001573b3d
       - sensor.temperature_158d0001573b5d
-      
-  house_humidity:
-    view: no
-    name: Household Humidity
-    entities:
       - sensor.humidity_158d0001576214
       - sensor.humidity_158d0001573b3d
       - sensor.humidity_158d0001573b5d
+      
+
       
   house_switches:
     view: no
@@ -61,42 +58,6 @@
       - switch.wall_switch_right_158d00014a599c
 
       
-
-#################################
-###      HOUSEHOLD LIGHTS     ###
-#################################
-# ##VIEWS
-  # Lights:
-    # view: yes
-    # icon: mdi:lightbulb-on
-    # entities:
-
-
-# ##ROOMS
-  # study:
-    # view: no
-    # name: Study
-    # entities:
-      # - switch.study_light
-
-      
-  # family_room:
-    # view: no
-    # name: Family Room
-    # entities:
-      # - switch.hawthorn_kitchen_
-      
-#################################
-###        TEMPERATURE        ###
-#################################
-# ##VIEWS
-  # Temperature:
-    # view: yes
-    # icon: mdi:temperature-celsius
-    # entities:
-
-# ##ROOMS     
-
 
 #################################
 ###           MEDIA           ###
@@ -116,34 +77,6 @@
 
  
 #################################
-###           SAMES           ###
-#################################
-##VIEWS
-  # Sames:
-    # view: yes
-    # icon: mdi:account-multiple
-    # entities:
-      # - group.james
-      # - group.sam
-      
-##GROUPS
-  # james:
-    # view: no
-    # name: James
-    # entities:
-      # - device_tracker.c709ca32
-      # - sensor.game
-      # - switch.james_blanket
-      
-  # sam:
-    # view: no
-    # name: Sam
-    # entities:
-      # - device_tracker.ce0916095403c82704
-      
-
-      
-#################################
 ###       SECURITY VIEWS      ###
 #################################
 ##VIEWS
@@ -156,15 +89,6 @@
       - group.security_states
       - group.security_detect
       
-  # cameras:
-    # view: yes
-    # icon: mdi:camcorder
-    # name: Household Cameras
-    # entities:
-      # - group.security_arlo1
-      # - group.security_arlo2
-      # - group.security_cameras
-
 ##GROUPS
 
   home_alarm:
@@ -195,47 +119,6 @@
 
       
 #################################
-###         BEDROOM           ###
-#################################
-##VIEWS
-  # Bedroom2:
-    # view: yes
-    # icon: mdi:hotel
-    # name: Sames Bedroom
-    # entities:
-      # - group.dyson
-      # - group.light
-      # - group.tv
-      # - group.bed
-
-  # dyson:
-    # view: no
-    # name: Dyson Control
-    # entities:
-      # - script.dyson_on
-      # - script.dyson_off
-      
-  # light:
-    # view: no
-    # name: Light/Fan Control
-    # entities:
-      # - script.bedroom_light_on
-      # - script.bedroom_light_off
-      
-  # tv:
-    # view: no
-    # name: TV Control
-    # entities:
-      # - script.bedroom_tv_on
-      # - script.bedroom_tv_off
-      
-  # bed:
-    # view: no
-    # name: James E Blanket
-    # entities:
-      # - switch.james_blanket
-      
-#################################
 ###        SYSTEM VIEW        ###
 #################################
 
@@ -245,6 +128,7 @@
     entities:
       - group.ha
       - group.household_power
+      - group.settings
       - group.pi
    
   ha:
@@ -260,6 +144,17 @@
       - sensor.mum_blanket_consumed
       - sensor.family_lamp_power
       - sensor.family_lamp_consumed
+
+  Settings:
+    view: no
+    entities:
+      - input_boolean.notifications
+      - input_boolean.mode_night
+      - input_boolean.mode_sleep
+      - input_boolean.mode_away
+      - input_boolean.welcome_home
+      - input_boolean.morning_first
+
 
   PI:
     view: no

@@ -55,3 +55,7 @@
     frienndly_name: Family Room 1
   switch.wall_switch_right_158d00014a599c:
     friendly_name: Family Room 2
+    
+## MISC
+  sensor.house_occupied:
+    icon: mdi:account-check
