@@ -1,0 +1,60 @@
+#################################
+###                           ###
+###      NOTIFICATIONS        ###
+###                           ###
+#################################
+
+#################################
+###         TEMPLATES         ###
+#################################
+##Notify Cathy, James and Guy   
+  notify_all:
+    sequence:
+      - condition: state
+        entity_id: input_boolean.notifications
+        state: 'on'
+      - service: notify.jamespb
+        data_template:
+          title: "{{ title }}"
+          message: "{{ message }}"
+      - service: notify.guypb
+        data_template:
+          title: "{{ title }}"
+          message: "{{ message }}"
+      - service: notify.cathypb
+        data_template:
+          title: "{{ title }}"
+          message: "{{ message }}"
+          
+##Notify just Cathy        
+  notify_cathy:
+    sequence:
+      - condition: state
+        entity_id: input_boolean.notifications
+        state: 'on'
+      - service: notify.cathypb
+        data_template:
+          title: "{{ title }}"
+          message: "{{ message }}"
+          
+##Notify just Guy         
+  notify_guy:
+    sequence:
+      - condition: state
+        entity_id: input_boolean.notifications
+        state: 'on'
+      - service: notify.guypb
+        data_template:
+          title: "{{ title }}"
+          message: "{{ message }}"
+ 
+##Notify just James  
+  notify_james:
+    sequence:
+      - condition: state
+        entity_id: input_boolean.notifications
+        state: 'on'
+      - service: notify.jamespb
+        data_template:
+          title: "{{ title }}"
+          message: "{{ message }}"
