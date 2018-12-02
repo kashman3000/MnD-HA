@@ -1,0 +1,4 @@
+2018-12-02 15:26:43 WARNING (MainThread) [homeassistant.components.http] legacy_api_password support has been enabled. If you don't require it, remove the 'api_password' from your http config.
+2018-12-02 15:26:54 WARNING (MainThread) [homeassistant.setup] Setup of wemo is taking over 10 seconds.
+2018-12-02 15:26:54 ERROR (SyncWorker_1) [homeassistant.components.wemo] Unable to get description url for 192.168.1.4
+2018-12-02 16:26:45 ERROR (MainThread) [homeassistant.components.updater] Got unexpected response: None

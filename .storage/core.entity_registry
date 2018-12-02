@@ -531,6 +531,33 @@
                 "name": null,
                 "platform": "wemo",
                 "unique_id": "221327K13002D5"
+            },
+            {
+                "config_entry_id": "9e86537988854088831e1dce3daaa87f",
+                "device_id": "d46ba98fe696454fa5c73b5972dd9f7b",
+                "disabled_by": null,
+                "entity_id": "media_player.office_speaker",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "27ae4443-3674-d3c5-df20-d2b3d7389f4d"
+            },
+            {
+                "config_entry_id": "9e86537988854088831e1dce3daaa87f",
+                "device_id": "e29f77d826894034b11f53b7e4f773a1",
+                "disabled_by": null,
+                "entity_id": "media_player.family_room_home",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "0e07ea77-6ee4-6d63-710c-b9a074702092"
+            },
+            {
+                "config_entry_id": "9e86537988854088831e1dce3daaa87f",
+                "device_id": "f3a50733b9c54cf3b5b714dfa3c10ae5",
+                "disabled_by": null,
+                "entity_id": "media_player.family_room_tv",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "75db8084-92f3-de71-9491-5d7a0f402153"
             }
         ]
     },

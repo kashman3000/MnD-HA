@@ -1,0 +1,11 @@
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /
+      - type: memory_use_percent
+      - type: memory_free
+      - type: load_5m
+      - type: network_in
+      - type: network_out
+      - type: processor_use
+      - type: since_last_boot

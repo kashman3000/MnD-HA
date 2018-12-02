@@ -1,0 +1,62 @@
+{
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "9e86537988854088831e1dce3daaa87f"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "d46ba98fe696454fa5c73b5972dd9f7b",
+                "identifiers": [
+                    [
+                        "cast",
+                        "27ae44433674d3c5df20d2b3d7389f4d"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Google Home Mini",
+                "name": "Office speaker",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "9e86537988854088831e1dce3daaa87f"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "e29f77d826894034b11f53b7e4f773a1",
+                "identifiers": [
+                    [
+                        "cast",
+                        "0e07ea776ee46d63710cb9a074702092"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Google Home Mini",
+                "name": "Family Room Home",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "9e86537988854088831e1dce3daaa87f"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "f3a50733b9c54cf3b5b714dfa3c10ae5",
+                "identifiers": [
+                    [
+                        "cast",
+                        "75db808492f3de7194915d7a0f402153"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Chromecast",
+                "name": "Family room TV",
+                "sw_version": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}

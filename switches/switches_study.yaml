@@ -1,0 +1,10 @@
+  - platform: template
+    switches:
+      sleep_mode:
+        value_template: "{{ is_state('sun.sun', 'above_horizon') }}"
+        turn_on:
+          service: homeassistant.turn_on
+          entity_id: script.sleep_mode_on
+        turn_off:
+          service: homeassistant.turn_on
+          entity_id: script.sleep_mode_off

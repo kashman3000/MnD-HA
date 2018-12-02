@@ -1,0 +1,31 @@
+- platform: template
+  sensors:
+  
+  #POWER PLUG USAGE
+    family_lamp_power:
+      entity_id: switch.plug_158d000128a22f
+      friendly_name: 'Family Lamp Power'
+      value_template: '{{ states.switch.plug_158d000128a22f.attributes["load_power"] }}'
+      icon_template: mdi:power-plug
+      unit_of_measurement: "W"
+      
+    mum_blanket_power:
+      entity_id: switch.plug_158d00012a260d
+      friendly_name: 'Mum E Blanket Power'
+      value_template: '{{ states.switch.plug_158d00012a260d.attributes["load_power"] }}'
+      icon_template: mdi:power-plug
+      unit_of_measurement: "W"
+      
+    family_lamp_consumed:
+      entity_id: switch.plug_158d000128a22f
+      friendly_name: 'Family Lamp Consumed'
+      value_template: '{{ states.switch.plug_158d000128a22f.attributes["power_consumed"] }}'
+      icon_template: mdi:power-plug
+      unit_of_measurement: "W"
+      
+    mum_blanket_consumed:
+      entity_id: switch.plug_158d00012a260d
+      friendly_name: 'Mum E Blanket Consumed'
+      value_template: '{{ states.switch.plug_158d00012a260d.attributes["power_consumed"] }}'
+      icon_template: mdi:power-plug
+      unit_of_measurement: "W"
