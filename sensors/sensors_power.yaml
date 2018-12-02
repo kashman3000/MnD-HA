@@ -28,5 +28,4 @@
       friendly_name: 'Mum E Blanket Consumed'
       value_template: '{{ states.switch.plug_158d00012a260d.attributes["power_consumed"] }}'
       icon_template: mdi:power-plug
->>>>>>> ec020890ef53d76ddc381a28c8f1fe944c4ae331
       unit_of_measurement: "W"

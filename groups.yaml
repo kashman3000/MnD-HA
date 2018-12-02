@@ -270,5 +270,4 @@
       - sensor.memory_use_percent
       - sensor.disk_use_
       - sensor.ram_use
->>>>>>> ec020890ef53d76ddc381a28c8f1fe944c4ae331
       - sensor.since_last_boot
