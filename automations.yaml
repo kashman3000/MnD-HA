@@ -1,3 +1,193 @@
 #################################
 ###          GENERAL          ###
 #################################
+
+
+
+
+#################################
+###                           ###
+###     FAMILY AUTOMATIONS    ###
+###                           ###
+#################################
+
+#################################
+###         FAMILY ARRIVE     ###
+#################################
+
+  - alias: Guy Arrive Home
+    trigger:
+      platform: state
+      entity_id: input_boolean.guy_wifi
+      to: 'on'
+    action:
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.mode_away
+      - service: script.turn_on
+        entity_id: script.notify_guy
+        data:
+          variables:
+            title: 'Welcome to MM Guy'
+            message: >
+                    Away mode is deactivated.
+                    {{ "\n" }}
+                    The current temperature in the family room is {{states('sensor.temperature_158d000201831b')}} degrees with {{states('sensor.humidity_158d000201831b')}} humidty.{{ "\n" }}
+      - service: script.turn_on
+        entity_id: script.notify_james
+        data:
+          variables:
+            title: 'Welcome to MM Guy'
+            message: 'Guy Arrived'
+                    
+  - alias: Cathy Arrive Home
+    trigger:
+      platform: state
+      entity_id: input_boolean.cathy_wifi
+      to: 'on'
+    action:
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.mode_away
+      - service: script.turn_on
+        entity_id: script.notify_cathy
+        data:
+          variables:
+            title: 'Welcome to MM Cathy'
+            message: >
+                    Away mode is deactivated.
+                    {{ "\n" }}
+                    The current temperature in the family room is {{states('sensor.temperature_158d000201831b')}} degrees with {{states('sensor.humidity_158d000201831b')}} humidty.{{ "\n" }}
+      - service: script.turn_on
+        entity_id: script.notify_james
+        data:
+          variables:
+            title: 'Welcome to MM Cathy'
+            message: 'Cathy Arrived'
+
+
+
+
+#################################
+###                           ###
+###    SECURITY AUTOMATIONS   ###
+###                           ###
+#################################
+
+#################################
+###      GENERAL ALERTS       ###
+#################################
+  - alias: MM Door Bell
+    trigger:
+      platform: event
+      event_type: click
+      event_data:
+        entity_id: binary_sensor.switch_158d00012967ff
+        click_type: single
+    action:
+      - service: script.turn_on
+        entity_id: script.notify_all
+        data:
+          variables:
+            title: 'MM Door Bell'
+            message: 'Someone is at the door!'
+
+#################################
+###         AWAY MODE         ###
+#################################
+  - alias: "Away Mode On"
+    trigger:
+      platform: state
+      entity_id: sensor.house_occupied
+      to: 'unoccupied'
+    action:
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.mode_away
+        
+  - alias: "Away Mode Off"
+    trigger:
+      platform: state
+      entity_id: sensor.house_occupied
+      to: 'occupied'
+    action:
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.mode_away
+
+
+
+#################################
+###         NIGHT MODE        ###
+#################################
+  - alias: Turn Night Mode On
+    trigger:
+      platform: state
+      entity_id: sun.sun
+      to: 'below_horizon'
+    action:
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.mode_night
+      - service: script.turn_on
+        entity_id: script.notify_james
+        data:
+          variables:
+            title: 'MM Night Mode On'
+            message: 'Testing the trigger'
+        
+  - alias: Turn Night Mode Off
+    trigger:
+      platform: state
+      entity_id: sun.sun
+      to: 'above_horizon'
+    action:
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.mode_night
+      - service: script.turn_on
+        entity_id: script.notify_james
+        data:
+          variables:
+            title: 'MM Night Mode Off'
+            message: 'Testing the trigger'
+            
+#################################
+###         SLEEP MODE        ###
+#################################
+  - alias: Turn Sleep Mode On
+    trigger:
+      platform: time
+      at: '21:45:00'
+    action:
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.mode_sleep
+      - service: script.turn_on
+        entity_id: script.notify_james
+        data:
+          variables:
+            title: 'MM Sleep Mode On'
+            message: 'Testing the trigger'
+        
+  - alias: Turn Sleep Mode Off
+    trigger:
+      platform: state
+      entity_id: sun.sun
+      to: 'above_horizon'
+    action:
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.mode_sleep
+      - service: script.turn_on
+        entity_id: script.notify_james
+        data:
+          variables:
+            title: 'MM Sleep Mode Off'
+            message: 'Testing the trigger'
+            
+#################################
+###      RESET BUTTONS        ###
+#################################
+
+#  - alias: Reset morning at 4am
+#    trigger:
+#      platform: time
+#      at: '04:00:00'
+#    action:
+#      - service: input_boolean.turn_on
+#        entity_id: input_boolean.morning_first
+
+
