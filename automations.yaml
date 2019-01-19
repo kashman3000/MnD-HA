@@ -1,7 +1,17 @@
 #################################
 ###          GENERAL          ###
 #################################
-
+#General IFTTT
+  - alias: General IFTTT
+    trigger:
+      platform: event
+      event_type: ifttt_webhook_received
+      event_data:
+        action: call_service
+    action:
+      service_template: '{{ trigger.event.data.service }}'
+      data_template:
+        entity_id: '{{ trigger.event.data.entity_id }}'
 
 
 
@@ -89,6 +99,32 @@
           variables:
             title: 'Home Door Bell'
             message: 'Someone is at the door!'
+            
+  - alias: Alarm On
+    trigger:
+      platform: event
+      event_type: xiaomi_aqara.click
+      event_data:
+        entity_id: binary_sensor.switch_158d000xxxxxc2
+        click_type: long_click_press
+    action:
+      service: xiaomi_aqara.play_ringtone
+      data:
+        gw_mac: f0:b4:29:cf:a9:76
+        ringtone_id: 1
+        ringtone_vol: 100
+
+  - alias: Alarm Off
+    trigger:
+      platform: event
+      event_type: xiaomi_aqara.click
+      event_data:
+        entity_id: binary_sensor.switch_158d000xxxxxc2
+        click_type: single
+    action:
+      service: xiaomi_aqara.stop_ringtone
+      data:
+        gw_mac: f0:b4:29:cf:a9:76
 
 #################################
 ###         AWAY MODE         ###

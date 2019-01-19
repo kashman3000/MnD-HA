@@ -60,11 +60,59 @@ xiaomi_aqara:
  gateways:
    - mac: !secret xiaomi_mac
      key: !secret xiaomi_key
+   - mac: !secret xiaomi_mac2
+     key: !secret xiaomi_key2
   
 # Wemo
 wemo:
   static:
     - 192.168.1.4
+    
+# CAMERAS
+
+ffmpeg:
+
+  
+camera:
+  - platform: ffmpeg
+    input: !secret camera1
+    extra_arguments: -pred 1 -q:v 2
+    name: front_camera
+  - platform: ffmpeg
+    input: !secret camera2
+    extra_arguments: -pred 1 -q:v 2
+    name: side_camera
+  - platform: ffmpeg
+    input: !secret camera3
+    extra_arguments: -pred 1 -q:v 2
+    name: back_camera
+  - platform: ffmpeg
+    input: !secret camera4
+    extra_arguments: -pred 1 -q:v 2
+    name: drive_camera
+    
+binary_sensor:    
+#  - platform: ffmpeg_motion
+#    name: Front Motion
+#    input: !secret camera1
+#    initial_state: true
+#    reset: 5
+#  - platform: ffmpeg_motion
+#    name: Side Motion
+#    input: !secret camera2
+#    initial_state: true
+#    reset: 5
+#  - platform: ffmpeg_motion
+#    name: Back Motion
+#    input: !secret camera3
+#    initial_state: true
+#    reset: 5
+  - platform: ffmpeg_motion
+    name: Drive Motion
+    input: !secret camera4
+    initial_state: true
+    reset: 5
+
     
 # NOTIFY   
 notify:

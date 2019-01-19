@@ -558,6 +558,60 @@
                 "name": null,
                 "platform": "cast",
                 "unique_id": "75db8084-92f3-de71-9491-5d7a0f402153"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.illumination_158d0002b6e09c",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "lux158d0002b6e09c"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.illumination_158d0002b70989",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "lux158d0002b70989"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d0002b6e09c",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0002b6e09c"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d0002b70989",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0002b70989"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.illumination_f0b429cc4ea4",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "illuminationf0b429cc4ea4"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.gateway_light_f0b429cc4ea4",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "rgbf0b429cc4ea4"
             }
         ]
     },

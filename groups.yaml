@@ -86,6 +86,10 @@
     name: Household Security
     entities:
       - group.home_alarm
+      - camera.back_camera
+      - camera.front_camera
+      - camera.drive_camera
+      - camera.side_camera
       - group.security_states
       - group.security_detect
       
@@ -98,6 +102,7 @@
       - sensor.security_alert
       - sensor.motion_alert_trigger
       - script.motion_detected
+
       
   security_states:
     view: no
@@ -111,8 +116,14 @@
     view: no
     name: Door Security
     entities:
+      - binary_sensor.back_motion
+      - binary_sensor.side_motion
+      - binary_sensor.front_motion
+      - binary_sensor.drive_motion
       - binary_sensor.motion_sensor_158d00015a9066
       - binary_sensor.motion_sensor_158d00012325fa
+      - binary_sensor.motion_sensor_158d0002b70989
+      - binary_sensor.motion_sensor_158d0002b6e09c
       - binary_sensor.door_window_sensor_158d00015c85ca
       - binary_sensor.door_window_sensor_158d000158363b
       - binary_sensor.door_window_sensor_158d000153786f
@@ -155,6 +166,8 @@
       - input_boolean.mode_away
       - input_boolean.welcome_home
       - input_boolean.morning_first
+      - automation.alarm_on
+      - automation.alarm_off
       
   People:
     view: no      

@@ -8,4 +8,4 @@
       - type: network_in
       - type: network_out
       - type: processor_use
-      - type: since_last_boot
+      - type: last_boot

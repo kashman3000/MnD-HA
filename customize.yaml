@@ -14,6 +14,10 @@
     friendly_name: Family Room Motion
   binary_sensor.motion_sensor_158d00012325fa:
     friendly_name: Hallway Motion
+  binary_sensor.motion_sensor_158d0002b6e09c:
+    friendly_name: Main Bedroom Motion
+  binary_sensor.motion_sensor_158d0002b70989:
+    friendly_name: Office Motion
 
     
 ### TEMP SENSORS
@@ -59,3 +63,10 @@
 ## MISC
   sensor.house_occupied:
     icon: mdi:account-check
+    
+## GATEWAYS
+  light.gateway_light_f0b429cfa976:
+    friendly_name: Gateway 1
+  light.gateway_light_f0b429cc4ea4:
+    friendly_name: Gateway 2
+

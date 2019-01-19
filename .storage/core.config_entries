@@ -9,6 +9,17 @@
                 "source": "discovery",
                 "title": "Google Cast",
                 "version": 1
+            },
+            {
+                "connection_class": "unknown",
+                "data": {
+                    "webhook_id": "3caa23137c459669a5d2e4d415214e3fe4aa825f4fe4656ac8228759a115ee4b"
+                },
+                "domain": "ifttt",
+                "entry_id": "acff2d13485e4697b1e800c125b76df8",
+                "source": "user",
+                "title": "IFTTT Webhook",
+                "version": 1
             }
         ]
     },
