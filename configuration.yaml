@@ -72,11 +72,25 @@ wemo:
 
 ffmpeg:
 
+
+##ALARM
+alarm_control_panel:
+  - platform: manual
+    name: Home Alarm
+    code: !secret alarm_code
+    pending_time: 30
+    delay_time: 20
+    trigger_time: 4
+    disarmed:
+      trigger_time: 0
+    armed_home:
+      pending_time: 0
+      delay_time: 0
   
 camera:
   - platform: ffmpeg
     input: !secret camera1
-    extra_arguments: -pred 1 -q:v 2
+    extra_arguments: -pred 1 -q:v 40
     name: front_camera
   - platform: ffmpeg
     input: !secret camera2
@@ -90,28 +104,6 @@ camera:
     input: !secret camera4
     extra_arguments: -pred 1 -q:v 2
     name: drive_camera
-    
-binary_sensor:    
-#  - platform: ffmpeg_motion
-#    name: Front Motion
-#    input: !secret camera1
-#    initial_state: true
-#    reset: 5
-#  - platform: ffmpeg_motion
-#    name: Side Motion
-#    input: !secret camera2
-#    initial_state: true
-#    reset: 5
-#  - platform: ffmpeg_motion
-#    name: Back Motion
-#    input: !secret camera3
-#    initial_state: true
-#    reset: 5
-  - platform: ffmpeg_motion
-    name: Drive Motion
-    input: !secret camera4
-    initial_state: true
-    reset: 5
 
     
 # NOTIFY   
