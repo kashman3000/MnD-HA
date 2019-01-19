@@ -1,20 +1,7 @@
-2019-01-19 14:32:39 WARNING (MainThread) [homeassistant.components.http] legacy_api_password support has been enabled. If you don't require it, remove the 'api_password' from your http config.
-2019-01-19 14:32:57 ERROR (SyncWorker_5) [homeassistant.components.wemo] Unable to get description url for WeMo at: 192.168.1.4
-2019-01-19 14:36:30 WARNING (SyncWorker_8) [homeassistant.components.alarm_control_panel.manual] Invalid code given for armed_away
-2019-01-19 15:19:53 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.motion_sensor_158d0002b6e09c is taking over 10 seconds
-2019-01-19 15:19:53 ERROR (SyncWorker_9) [xiaomi_gateway] Cannot connect to Gateway
-2019-01-19 15:19:53 ERROR (SyncWorker_9) [xiaomi_gateway] No data in response from hub None
-2019-01-19 16:00:17 ERROR (MainThread) [aiohttp.server] Error handling request
+2019-01-19 16:12:03 WARNING (MainThread) [homeassistant.components.http] legacy_api_password support has been enabled. If you don't require it, remove the 'api_password' from your http config.
+2019-01-19 16:12:05 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 263, in data_received
-    messages, upgraded, tail = self._request_parser.feed_data(data)
-  File "aiohttp/_http_parser.pyx", line 523, in aiohttp._http_parser.HttpParser.feed_data
-aiohttp.http_exceptions.BadStatusLine: invalid HTTP method
-2019-01-19 16:01:05 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 127.0.0.1
-2019-01-19 16:02:51 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 127.0.0.1
-2019-01-19 16:06:38 ERROR (MainThread) [aiohttp.server] Error handling request
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 263, in data_received
-    messages, upgraded, tail = self._request_parser.feed_data(data)
-  File "aiohttp/_http_parser.pyx", line 523, in aiohttp._http_parser.HttpParser.feed_data
-aiohttp.http_exceptions.BadStatusLine: invalid HTTP method
+  File "/usr/src/app/homeassistant/helpers/entity_platform.py", line 344, in _async_add_entity
+    raise HomeAssistantError(msg)
+homeassistant.exceptions.HomeAssistantError: Entity id already exists: sensor.house_motion
+2019-01-19 16:12:21 ERROR (SyncWorker_0) [homeassistant.components.wemo] Unable to get description url for WeMo at: 192.168.1.4

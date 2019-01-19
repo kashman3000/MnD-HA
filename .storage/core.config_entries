@@ -20,6 +20,17 @@
                 "source": "user",
                 "title": "IFTTT Webhook",
                 "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "udn": "uuid:d733a543-7f14-488f-9553-07cf9783a3d2"
+                },
+                "domain": "upnp",
+                "entry_id": "f4698e3f796441a5ba3d864ca7421116",
+                "source": "discovery",
+                "title": "UPnP/IGD",
+                "version": 1
             }
         ]
     },

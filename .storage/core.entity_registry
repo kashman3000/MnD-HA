@@ -612,6 +612,78 @@
                 "name": null,
                 "platform": "xiaomi_aqara",
                 "unique_id": "rgbf0b429cc4ea4"
+            },
+            {
+                "config_entry_id": "f4698e3f796441a5ba3d864ca7421116",
+                "device_id": "614fb31cd1754e58b968e7d5a9fae361",
+                "disabled_by": null,
+                "entity_id": "sensor.onhub_packets_received",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:d733a543-7f14-488f-9553-07cf9783a3d2_packets_received"
+            },
+            {
+                "config_entry_id": "f4698e3f796441a5ba3d864ca7421116",
+                "device_id": "5cf3c243c29143f689302149db30836a",
+                "disabled_by": null,
+                "entity_id": "sensor.onhub_packets_sec_received",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:d733a543-7f14-488f-9553-07cf9783a3d2_packets/sec_received"
+            },
+            {
+                "config_entry_id": "f4698e3f796441a5ba3d864ca7421116",
+                "device_id": "3d028022917e44b2a7fb887b632582d4",
+                "disabled_by": null,
+                "entity_id": "sensor.onhub_bytes_received",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:d733a543-7f14-488f-9553-07cf9783a3d2_bytes_received"
+            },
+            {
+                "config_entry_id": "f4698e3f796441a5ba3d864ca7421116",
+                "device_id": "588bbb727c2e4cba8afa99aec9bf4db9",
+                "disabled_by": null,
+                "entity_id": "sensor.onhub_packets_sent",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:d733a543-7f14-488f-9553-07cf9783a3d2_packets_sent"
+            },
+            {
+                "config_entry_id": "f4698e3f796441a5ba3d864ca7421116",
+                "device_id": "114e115dc1e24f96aef2f9cebb7a6116",
+                "disabled_by": null,
+                "entity_id": "sensor.onhub_kbyte_sec_sent",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:d733a543-7f14-488f-9553-07cf9783a3d2_kbyte/sec_sent"
+            },
+            {
+                "config_entry_id": "f4698e3f796441a5ba3d864ca7421116",
+                "device_id": "c4b48a534f674a21919f6c2a36b5b6af",
+                "disabled_by": null,
+                "entity_id": "sensor.onhub_kbyte_sec_received",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:d733a543-7f14-488f-9553-07cf9783a3d2_kbyte/sec_received"
+            },
+            {
+                "config_entry_id": "f4698e3f796441a5ba3d864ca7421116",
+                "device_id": "e70c3682eb0540fea6402017215deeb6",
+                "disabled_by": null,
+                "entity_id": "sensor.onhub_packets_sec_sent",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:d733a543-7f14-488f-9553-07cf9783a3d2_packets/sec_sent"
+            },
+            {
+                "config_entry_id": "f4698e3f796441a5ba3d864ca7421116",
+                "device_id": "e0a331e455254f919aee29dea43cfcc9",
+                "disabled_by": null,
+                "entity_id": "sensor.onhub_bytes_sent",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:d733a543-7f14-488f-9553-07cf9783a3d2_bytes_sent"
             }
         ]
     },
