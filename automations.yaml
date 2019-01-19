@@ -137,6 +137,8 @@
     action:
       - service: input_boolean.turn_on
         entity_id: input_boolean.mode_away
+      - service: script.turn_on
+        entity_id: script.alarm_arm
         
   - alias: "Away Mode Off"
     trigger:
@@ -146,6 +148,8 @@
     action:
       - service: input_boolean.turn_off
         entity_id: input_boolean.mode_away
+      - service: script.turn_on
+        entity_id: script.alarm_disarm
 
 
 

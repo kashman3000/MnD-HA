@@ -1,0 +1,56 @@
+#################################
+###     SECURITY TEMPLATES    ###
+#################################
+  - platform: template
+    sensors:
+      house_motion:
+        friendly_name: "House Motion"
+        value_template: >-
+            {%- if is_state("binary_sensor.motion_sensor_158d00015a9066", "on") %}
+                Motion detected
+            {%- elif is_state("binary_sensor.motion_sensor_158d00012325fa", "on") %}
+                Motion detected
+            {%- elif is_state("binary_sensor.motion_sensor_158d0002b6e09c", "on") %}
+                Motion detected
+            {%- elif is_state("binary_sensor.motion_sensor_158d0002b70989", "on") %}
+                Motion detected
+            {% else %}
+                unoccupied
+            {%- endif %}
+        icon_template: >-
+            {%- if is_state("binary_sensor.motion_sensor_158d00015a9066", "on") %}
+                mdi:alert-circle
+            {%- elif is_state("binary_sensor.motion_sensor_158d00012325fa", "on") %}
+                mdi:alert-circle
+            {%- elif is_state("binary_sensor.motion_sensor_158d0002b6e09c", "on") %}
+                mdi:alert-circle
+            {%- elif is_state("binary_sensor.motion_sensor_158d0002b70989", "on") %}
+                mdi:alert-circle        
+            {% else %}
+                mdi:alert-circle-outline
+            {%- endif %}
+            
+  - platform: template
+    sensors:
+      house_motion:
+        friendly_name: "House Doors"
+        value_template: >-
+            {%- if is_state("binary_sensor.door_window_sensor_158d000158363b", "on") %}
+                Door open (Back Door)
+            {%- elif is_state("binary_sensor.door_window_sensor_158d00015c85ca", "on") %}
+                occupied (Front Door)
+            {%- elif is_state("inary_sensor.door_window_sensor_158d000153786f", "on") %}
+                occupied (Laundry Door)
+            {% else %}
+                Doors closed
+            {%- endif %}
+        icon_template: >-
+            {%- if is_state("binary_sensor.door_window_sensor_158d000158363b", "on") %}
+                mdi:alert-circle
+            {%- elif is_state("binary_sensor.door_window_sensor_158d00015c85ca", "on") %}
+                mdi:alert-circle
+            {%- elif is_state("inary_sensor.door_window_sensor_158d000153786f", "on") %}
+                mdi:alert-circle          
+            {% else %}
+                mdi:alert-circle-outline
+            {%- endif %} 

@@ -6,11 +6,20 @@
     view: yes
     icon: mdi:home
     entities:
+      - group.alarm
       - group.day
       - group.local_health
       - group.house
       - group.house_temps
       - group.house_switches
+      
+      
+  alarm:
+    view: no
+    name: House Security
+    entities:
+      - sensor.house_occupied
+      - alarm_control_panel.home_alarm
       
   day:
     view: no
@@ -20,7 +29,7 @@
       - sensor.bom_air_temp_c
       - sensor.bom_feels_like_c
       - sensor.bom_rain_today
-      - sensor.house_occupied
+
       
   local_health:
     view: no
@@ -62,18 +71,6 @@
 #################################
 ###           MEDIA           ###
 #################################
-##VIEWS
-  Media:
-    view: yes
-    icon: mdi:television
-    entities:
-      - group.family_bigtv
-      
-  family_bigtv:
-    view: no
-    name: Family Room TV
-    entities:
-      - media_player.hawthorn_bigtv
 
  
 #################################
